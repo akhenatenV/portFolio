@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Robert Wilson | Port Folio </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='SASS/main.css'>
+
+        <style>
+            body{
+                background-color: #2A2A2A;
+                background-image: url(background.png);
+                background-size: cover;
+                background-repeat: repeat;
+            }
+            .header-accent{
+                color:#00FF7F;
+            }
+            .color-white{
+                color: #fff;
+            }
+
+            .logo{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                left: 20px;
+                background-image: url(logo.png);
+                background-size: contain;
+                background-repeat: repeat;
+            }
+            .flex-box{
+                display: flex;
+                flex-direction: row;
+            }
+            @media (width < 968px){
+                .nav-menu{
+                    display: flex !important;
+                    justify-content: space-around;
+                    align-items: center;
+                    background: transparent;
+                    margin-bottom: 2rem;
+                }
+                .logo{
+                    position: relative;
+                }
+                .header-section > h1{
+                    font-size: 2.15rem !important;
+                }
+                .image-block {
+                    position: relative !important;
+                    left: 47px !important;
+                }
+                .image-section {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                }
+                .hero-section{
+                    text-align: center;
+                }
+                .flex-box{
+                    flex-direction: column;
+                }
+                .container > h2::after{
+                    position: relative;
+                    left: 35% !important;
+                    display: block;
+                    content: '';
+                    width: 60% !important;
+                    height: 2px;
+                    background:linear-gradient(to right, #c7c7c7 0%, #2a2a2a 50%, #2a2a2a 100%) !important;
+                    margin-bottom: 1rem;
+                }
+            }
+            .header-section{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .image-section{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 100%;
+            }
+            .profile-block{
+                position: relative;
+                width: 400px;
+                height: 500px;
+                height: auto;
+                background-color: #5858583d;
+                box-shadow: 2px 2px .75rem #171717;
+            }
+            .image-block{
+                position: relative;
+                width: 400px;
+                height: 500px;
+                top: 0px;
+                left: -100px;
+            }
+            .image-block > img{
+                box-shadow: 2px 2px .75rem #171717;
+            }
+            .horizontal-line{
+                width: 100%;
+                height: 3px;
+                background: linear-gradient(to right, #2a2a2a 0%, #000 50%, #2a2a2a 100%);
+                margin-top: 1rem;
+            }
+            .container > h2{
+                color: #fff;
+            }
+            .container > h2::after{
+                position: relative;
+                display: block;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background:linear-gradient(to right, #c7c7c7 0%, #2a2a2a 60%, #2a2a2a 100%);
+                margin-bottom: 1rem;
+            }
+            .container > p{
+                color: rgb(161, 161, 161);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo"></div>
+        <div class="flex-box">
+            <section class="header-section">
+                <h1 class="heading">
+                    <span class="header-accent">
+                        &lt;b&gt;
+                    </span>
+                    <span class="color-white">
+                        Hello World!
+                    </span>
+                    <span class="header-accent">
+                        &lt;/b&gt;
+                    </span>
+                </h1>
+                <h3><span class="header-accent">I'm Rab,</span><span class="color-white"> A Front-end <br> Web Developer</span></h3>
+            </section>
+
+            <section class="image-section">
+                <div class="profile-block">
+                    <div class="nav-bar">
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="index.html" class="nav-link is-active">Home</a></li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="view-portfolio-btn nav-link">Port Folio</a></li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="view-contact-btn nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="view-about-btn nav-link">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="image-block">
+                        <img src="me.jpg" class="image" alt="an image of robert wilson" width="300px" height="400px">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="horizontal-line"></div>
+
+        <div class="section-medium hero-section">
+            <div class="flex-box justify-content-evenly">
+                <div class="container">
+                    <h2><a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Html</a></h2>
+                    <p class="text-body-secondary">
+                        3 Years Experience
+                    </p>
+                </div>
+                <div class="container">
+                    <h2><a class="nav-link" href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></h2>
+                    <p class="text-body-secondary">
+                        3 Years Experience
+                    </p>
+                </div>
+            </div>
+            <div class="section"></div>
+            <div class="flex-box justify-content-evenly">
+                <div class="container">
+                    <h2><a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></h2>
+                    <p class="text-body-secondary">
+                        3 Years Experience
+                    </p>
+                </div>
+                <div class="container">
+                    <h2><a class="nav-link" href="https://sass-lang.com/">SASS</a></h2>
+                    <p class="text-body-secondary">
+                        2 Years Experience
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section grid theme-dark shadow-sm">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium incidunt, 
+                volem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium incidunt, 
+                volem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium incidunt, 
+                volem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium incidunt, 
+                voluptas culpa dolore dicta perferendis accusantium alias ab eaque reprehenderit impedit.
+            </p>
+        </div>
+
+        <footer class="grid d-flex w-100 mar-t-lg flex-row">
+            <div class="col-desk-6 col-tab-12 section theme-dark d-flex align-items-end  flex-column">
+                <h6>HTML Certified</h6>
+                <h6>CSS Certified</h6>
+                <h6>SASS Certified</h6>
+                <h6>JAVASCRIPT Certified</h6>
+                <h6>JQUERY Certified</h6>
+            </div>
+            <div class="col-desk-6 col-tab-12 section theme-dark">
+                <h6>UI Design</h6>
+                <h6>Fireworks</h6>
+                <h6>Visual Studio</h6>
+                <h6>Cinema 4D</h6>
+            </div>
+            <div class="grid d-flex justify-content-end align-content-center text-center theme-dark">
+                <div class="col-desk-6 col-tab-12">|Code&trade;  2023  |rab@gmail.com  |@rabWilosn  |#Rab_Wilson  </div>
+            </div>
+        </footer>
+        
+<!-- PORTFOLIO MODAL  -->
+        <div class="modal portfolio-modal" >
+            <div class="modal-content">
+                <span class="modal-header">
+                    <h2 class="modal-title">My Portfolio</h2>
+                </span>
+                <div class="modal-body">
+                    <div class="menu">
+                        <span class="menu-label">History</span>
+                        <ul class="menu-list">
+                            <li class="list-item">
+                                <ul>
+                                    <li class="list-item">
+                                        2009 Started Co. Beba&trade;
+                                    </li>
+                                    <li class="list-item">
+                                        2011 Sold Co. Beba&trade; for £1.2B
+                                    </li>
+                                    <li class="list-item">
+                                        2011 Facebook Developer 2 Years
+                                    </li>
+                                    <li class="list-item">
+                                        2014 Google Placement Web Developer 1 Year
+                                    </li>
+                                    <li class="list-item">
+                                        2016 Invented Co. CODE&trade;
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <span class="menu-label">Web Developer Projects</span>
+                        <ul class="menu-list">
+                            <li class="list-item">
+                                <ul>
+                                    <li class="list-item">
+                                        
+                                    </li>
+                                    <li class="list-item">
+                                        
+                                    </li>
+                                    <li class="list-item">
+                                        
+                                    </li>
+                                    <li class="list-item">
+                                        
+                                    </li>
+                                    <li class="list-item">
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group border-dark-2 rounded-3">
+                        <button class="btn btn-secondary-0 portfolio-modal-close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT MODAL  -->
+                <div class="modal contact-modal" >
+                    <div class="modal-content">
+                        <span class="modal-header">
+                            <h2 class="modal-title">My Contact Information</h2>
+                        </span>
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Name: <span class="text-body-secondary">Robert Wilson</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Email: <span class="text-body-secondary">Rabwilosn35350@gmail.com</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Number: <span class="text-body-secondary">01234 1859 2601</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Facebook: <span class="text-body-secondary">#rab_wilson</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Instagram  <span class="text-body-secondary">@rabWilson</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Instagram  <span class="text-body-secondary">@rabWilson</span>
+                                </li>
+                                <li class="list-group-item">
+                                    TokTok  <span class="text-body-secondary">@rabWilson</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group border-dark-2 rounded-3">
+                                <button class="btn btn-secondary-0 contact-modal-close">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- ABOUT MODAL  -->
+                <div class="modal about-modal" >
+                    <div class="modal-content">
+                        <span class="modal-header">
+                            <h2 class="modal-title">About Me</h2>
+                        </span>
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Name: <span class="text-body-secondary">Robert Wilson</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group border-dark-2 rounded-3">
+                                <button class="btn btn-secondary-0 about-modal-close">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        <script>
+            // 
+            // PORTFOLIO MODAL
+            // 
+            const viewportfolioBtn = document.getElementsByClassName('view-portfolio-btn')[0];
+            const portfolioModal = document.getElementsByClassName('portfolio-modal')[0];
+            const portfolioModalClose = document.getElementsByClassName('portfolio-modal-close')[0];
+            
+            viewportfolioBtn.onclick = function(){
+                portfolioModal.style.display="block";
+            }
+            portfolioModalClose.onclick = function(){
+                portfolioModal.style.display="none";
+            }
+
+            window.onclick = function(e){
+                if(e.target.classList.contains('portfolio-modal')){
+                    portfolioModal.style.display="none";
+                }
+            }
+            // 
+            // CONTACT MODAL
+            // 
+            const viewcontactBtn = document.getElementsByClassName('view-contact-btn')[0];
+            const contactModal = document.getElementsByClassName('contact-modal')[0];
+            const contactModalClose = document.getElementsByClassName('contact-modal-close')[0];
+            
+            viewcontactBtn.onclick = function(){
+                contactModal.style.display="block";
+            }
+            contactModalClose.onclick = function(){
+                contactModal.style.display="none";
+            }
+
+            window.onclick = function(e){
+                if(e.target.classList.contains('contact-modal')){
+                    contactModal.style.display="none";
+                }
+            }
+            // 
+            // ABOUT MODAL
+            // 
+            const viewaboutBtn = document.getElementsByClassName('view-about-btn')[0];
+            const aboutModal = document.getElementsByClassName('about-modal')[0];
+            const aboutModalClose = document.getElementsByClassName('about-modal-close')[0];
+            
+            viewaboutBtn.onclick = function(){
+                aboutModal.style.display="block";
+            }
+            aboutModalClose.onclick = function(){
+                aboutModal.style.display="none";
+            }
+
+            window.onclick = function(e){
+                if(e.target.classList.contains('about-modal')){
+                    aboutModal.style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>
